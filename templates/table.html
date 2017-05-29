@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function goBack() {
+    window.history.back()
+}
+</script>
+</head>
+<body>
+
+   <CENTER><TABLE WIDTH=50% BORDER=1
+     BGCOLOR=gold CELLPADDING=1>
+
+            {% for row in datas %}
+                <tr>
+                    {% for data in row %}
+
+                            <td>{{ data }}</td>
+
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+    </table>
+
+<br>
+<button onclick="goBack()">Go Back</button>
+
+
+</body>
+</html>
